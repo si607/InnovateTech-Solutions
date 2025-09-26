@@ -1,0 +1,1284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Learn about InnovateTech Solutions - our history, team, values, and commitment to delivering innovative technology solutions worldwide.">
+    <meta name="keywords" content="about us, company history, team, values, technology company, innovation">
+    <meta name="author" content="InnovateTech Solutions">
+    <meta property="og:title" content="About Us - InnovateTech Solutions">
+    <meta property="og:description" content="Discover our journey, meet our expert team, and learn about the values that drive InnovateTech Solutions to deliver exceptional technology services.">
+    <meta property="og:type" content="website">
+    <meta name="robots" content="index, follow">
+    
+    <title>About Us - InnovateTech Solutions</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🚀</text></svg>">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css">
+    
+    <style>
+        /* ============== REUSE BASE STYLES FROM INDEX.HTML ============== */
+        :root {
+            --primary-gradient: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            --secondary-gradient: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+            --accent-gradient: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+            --success-gradient: linear-gradient(135deg, #11998e 0%, #38ef7d 100%);
+            --dark-gradient: linear-gradient(135deg, #2c3e50 0%, #4a6741 100%);
+            
+            --primary-color: #667eea;
+            --secondary-color: #764ba2;
+            --accent-color: #f093fb;
+            --success-color: #11998e;
+            --warning-color: #f39c12;
+            --danger-color: #e74c3c;
+            
+            --text-dark: #2c3e50;
+            --text-medium: #34495e;
+            --text-light: #7f8c8d;
+            --text-white: #ffffff;
+            
+            --bg-white: #ffffff;
+            --bg-light: #f8f9fa;
+            --bg-dark: #2c3e50;
+            --bg-black: #1a1a1a;
+            
+            --shadow-sm: 0 2px 4px rgba(0,0,0,0.1);
+            --shadow-md: 0 4px 6px rgba(0,0,0,0.1);
+            --shadow-lg: 0 10px 15px rgba(0,0,0,0.1);
+            --shadow-xl: 0 20px 25px rgba(0,0,0,0.15);
+            --shadow-2xl: 0 25px 50px rgba(0,0,0,0.25);
+            
+            --border-radius-sm: 4px;
+            --border-radius-md: 8px;
+            --border-radius-lg: 12px;
+            --border-radius-xl: 20px;
+            --border-radius-full: 9999px;
+            
+            --spacing-xs: 0.25rem;
+            --spacing-sm: 0.5rem;
+            --spacing-md: 1rem;
+            --spacing-lg: 1.5rem;
+            --spacing-xl: 2rem;
+            --spacing-2xl: 3rem;
+            --spacing-3xl: 4rem;
+            
+            --transition-fast: 0.15s ease;
+            --transition-normal: 0.3s ease;
+            --transition-slow: 0.5s ease;
+            --transition-bounce: 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+            
+            --font-inter: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            --font-poppins: 'Poppins', -apple-system, BlinkMacSystemFont, sans-serif;
+        }
+
+        *, *::before, *::after {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        html {
+            scroll-behavior: smooth;
+            font-size: 16px;
+            line-height: 1.5;
+        }
+
+        body {
+            font-family: var(--font-inter);
+            color: var(--text-dark);
+            background-color: var(--bg-white);
+            line-height: 1.6;
+            overflow-x: hidden;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+
+        /* ============== HEADER STYLES (SAME AS INDEX) ============== */
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 1000;
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+            transition: var(--transition-normal);
+        }
+
+        .header-content {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: var(--spacing-md) var(--spacing-xl);
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .logo {
+            font-family: var(--font-poppins);
+            font-size: 1.75rem;
+            font-weight: 800;
+            background: var(--primary-gradient);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            text-decoration: none;
+            transition: var(--transition-bounce);
+            display: flex;
+            align-items: center;
+            gap: var(--spacing-sm);
+        }
+
+        .logo:hover {
+            transform: translateY(-2px);
+        }
+
+        .logo::before {
+            content: '🚀';
+            font-size: 1.5rem;
+            animation: float 3s ease-in-out infinite;
+        }
+
+        .nav-menu {
+            display: flex;
+            align-items: center;
+            gap: var(--spacing-xl);
+        }
+
+        .nav-links {
+            display: flex;
+            list-style: none;
+            gap: var(--spacing-lg);
+        }
+
+        .nav-links a {
+            position: relative;
+            text-decoration: none;
+            color: var(--text-dark);
+            font-weight: 500;
+            padding: var(--spacing-sm) var(--spacing-md);
+            border-radius: var(--border-radius-md);
+            transition: var(--transition-normal);
+            overflow: hidden;
+        }
+
+        .nav-links a::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: var(--primary-gradient);
+            transition: var(--transition-normal);
+            z-index: -1;
+        }
+
+        .nav-links a:hover::before,
+        .nav-links a.active::before {
+            left: 0;
+        }
+
+        .nav-links a:hover,
+        .nav-links a.active {
+            color: var(--text-white);
+            transform: translateY(-2px);
+        }
+
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            gap: var(--spacing-sm);
+            padding: var(--spacing-md) var(--spacing-xl);
+            border: none;
+            border-radius: var(--border-radius-full);
+            font-weight: 600;
+            text-decoration: none;
+            cursor: pointer;
+            transition: var(--transition-bounce);
+            position: relative;
+            overflow: hidden;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            font-size: 0.875rem;
+            white-space: nowrap;
+        }
+
+        .btn-primary {
+            background: var(--primary-gradient);
+            color: var(--text-white);
+            box-shadow: var(--shadow-md);
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-3px);
+            box-shadow: var(--shadow-xl);
+        }
+
+        .menu-toggle {
+            display: none;
+            background: none;
+            border: none;
+            cursor: pointer;
+            flex-direction: column;
+            gap: 4px;
+            padding: var(--spacing-sm);
+        }
+
+        .menu-toggle span {
+            width: 25px;
+            height: 3px;
+            background: var(--text-dark);
+            border-radius: 2px;
+            transition: var(--transition-fast);
+        }
+
+        /* ============== PAGE HERO ============== */
+        .page-hero {
+            min-height: 60vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: var(--primary-gradient);
+            position: relative;
+            overflow: hidden;
+            text-align: center;
+            color: var(--text-white);
+            margin-top: 80px;
+        }
+
+        .page-hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' viewBox='0 0 800 800'%3e%3cdefs%3e%3cfilter id='bbblurry-filter' x='-100%25' y='-100%25' width='400%25' height='400%25' filterUnits='objectBoundingBox' primitiveUnits='userSpaceOnUse' color-interpolation-filters='sRGB'%3e%3cfeGaussianBlur stdDeviation='130' x='0%25' y='0%25' width='100%25' height='100%25' in='SourceGraphic' edgeMode='none' result='blur'%3e%3c/feGaussianBlur%3e%3c/filter%3e%3c/defs%3e%3cg filter='url(%23bbblurry-filter)'%3e%3cellipse rx='150' ry='150' cx='200' cy='300' fill='hsla(0, 0%25, 100%25, 0.05)'%3e%3c/ellipse%3e%3c/g%3e%3c/svg%3e");
+            background-size: cover;
+            opacity: 0.3;
+        }
+
+        .page-hero-content {
+            position: relative;
+            z-index: 2;
+            max-width: 800px;
+            padding: var(--spacing-xl);
+            animation: fadeInUp 1s ease-out;
+        }
+
+        .page-hero h1 {
+            font-family: var(--font-poppins);
+            font-size: clamp(2.5rem, 4vw, 4rem);
+            font-weight: 900;
+            margin-bottom: var(--spacing-lg);
+            line-height: 1.1;
+            text-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        .page-hero p {
+            font-size: clamp(1rem, 2vw, 1.3rem);
+            opacity: 0.9;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        /* ============== SECTIONS ============== */
+        .section {
+            padding: var(--spacing-3xl) var(--spacing-xl);
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            width: 100%;
+        }
+
+        .section-header {
+            text-align: center;
+            margin-bottom: var(--spacing-3xl);
+        }
+
+        .section-header h2 {
+            font-family: var(--font-poppins);
+            font-size: clamp(2rem, 4vw, 3rem);
+            font-weight: 800;
+            margin-bottom: var(--spacing-md);
+            background: var(--primary-gradient);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .section-header p {
+            font-size: 1.1rem;
+            color: var(--text-medium);
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        /* ============== TIMELINE STYLES ============== */
+        .timeline-section {
+            background: var(--bg-light);
+            position: relative;
+        }
+
+        .timeline {
+            position: relative;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: var(--spacing-xl) 0;
+        }
+
+        .timeline::after {
+            content: '';
+            position: absolute;
+            width: 4px;
+            background: var(--primary-gradient);
+            top: 0;
+            bottom: 0;
+            left: 50%;
+            margin-left: -2px;
+            border-radius: var(--border-radius-sm);
+        }
+
+        .timeline-item {
+            padding: var(--spacing-lg) var(--spacing-xl);
+            position: relative;
+            background-color: inherit;
+            width: 50%;
+            margin-bottom: var(--spacing-2xl);
+        }
+
+        .timeline-item::after {
+            content: '';
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            right: -10px;
+            background: var(--primary-color);
+            border: 4px solid var(--bg-white);
+            top: 30px;
+            border-radius: 50%;
+            z-index: 1;
+            box-shadow: var(--shadow-md);
+        }
+
+        .timeline-item.left {
+            left: 0;
+        }
+
+        .timeline-item.right {
+            left: 50%;
+        }
+
+        .timeline-item.right::after {
+            left: -10px;
+        }
+
+        .timeline-content {
+            background: var(--bg-white);
+            padding: var(--spacing-xl);
+            border-radius: var(--border-radius-xl);
+            box-shadow: var(--shadow-lg);
+            position: relative;
+            transition: var(--transition-normal);
+        }
+
+        .timeline-content:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--shadow-2xl);
+        }
+
+        .timeline-item.left .timeline-content::after {
+            content: '';
+            position: absolute;
+            top: 30px;
+            right: -15px;
+            width: 0;
+            height: 0;
+            border: 15px solid transparent;
+            border-left-color: var(--bg-white);
+        }
+
+        .timeline-item.right .timeline-content::after {
+            content: '';
+            position: absolute;
+            top: 30px;
+            left: -15px;
+            width: 0;
+            height: 0;
+            border: 15px solid transparent;
+            border-right-color: var(--bg-white);
+        }
+
+        .timeline-year {
+            background: var(--primary-gradient);
+            color: var(--text-white);
+            padding: var(--spacing-sm) var(--spacing-md);
+            border-radius: var(--border-radius-full);
+            font-weight: 700;
+            display: inline-block;
+            margin-bottom: var(--spacing-md);
+            font-size: 0.9rem;
+            letter-spacing: 0.5px;
+        }
+
+        .timeline-content h3 {
+            font-family: var(--font-poppins);
+            font-size: 1.4rem;
+            font-weight: 700;
+            color: var(--text-dark);
+            margin-bottom: var(--spacing-sm);
+        }
+
+        .timeline-content p {
+            color: var(--text-medium);
+            line-height: 1.6;
+        }
+
+        /* ============== TEAM STYLES ============== */
+        .team-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: var(--spacing-2xl);
+            margin-top: var(--spacing-2xl);
+        }
+
+        .team-member {
+            background: var(--bg-white);
+            border-radius: var(--border-radius-xl);
+            overflow: hidden;
+            box-shadow: var(--shadow-md);
+            transition: var(--transition-normal);
+            text-align: center;
+            position: relative;
+        }
+
+        .team-member:hover {
+            transform: translateY(-10px);
+            box-shadow: var(--shadow-2xl);
+        }
+
+        .team-photo {
+            width: 100%;
+            height: 280px;
+            background: var(--primary-gradient);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 4rem;
+            color: var(--text-white);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .team-photo::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(45deg, transparent 30%, rgba(255,255,255,0.1) 50%, transparent 70%);
+            transform: translateX(-100%);
+            transition: transform 0.6s ease;
+        }
+
+        .team-member:hover .team-photo::before {
+            transform: translateX(100%);
+        }
+
+        .team-info {
+            padding: var(--spacing-xl);
+        }
+
+        .team-name {
+            font-family: var(--font-poppins);
+            font-size: 1.3rem;
+            font-weight: 700;
+            color: var(--text-dark);
+            margin-bottom: var(--spacing-sm);
+        }
+
+        .team-position {
+            color: var(--primary-color);
+            font-weight: 600;
+            margin-bottom: var(--spacing-md);
+        }
+
+        .team-bio {
+            color: var(--text-medium);
+            font-size: 0.95rem;
+            line-height: 1.6;
+            margin-bottom: var(--spacing-md);
+        }
+
+        .team-social {
+            display: flex;
+            justify-content: center;
+            gap: var(--spacing-md);
+        }
+
+        .team-social a {
+            width: 35px;
+            height: 35px;
+            background: var(--bg-light);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--text-medium);
+            transition: var(--transition-normal);
+        }
+
+        .team-social a:hover {
+            background: var(--primary-gradient);
+            color: var(--text-white);
+            transform: translateY(-2px);
+        }
+
+        /* ============== VALUES STYLES ============== */
+        .values-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: var(--spacing-2xl);
+            margin-top: var(--spacing-2xl);
+        }
+
+        .value-card {
+            background: var(--bg-white);
+            padding: var(--spacing-2xl);
+            border-radius: var(--border-radius-xl);
+            box-shadow: var(--shadow-md);
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+            transition: var(--transition-normal);
+        }
+
+        .value-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: var(--primary-gradient);
+            transform: scaleX(0);
+            transform-origin: left;
+            transition: var(--transition-normal);
+        }
+
+        .value-card:hover {
+            transform: translateY(-8px);
+            box-shadow: var(--shadow-2xl);
+        }
+
+        .value-card:hover::before {
+            transform: scaleX(1);
+        }
+
+        .value-icon {
+            width: 80px;
+            height: 80px;
+            background: var(--primary-gradient);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto var(--spacing-lg);
+            font-size: 2rem;
+            color: var(--text-white);
+            transition: var(--transition-bounce);
+        }
+
+        .value-card:hover .value-icon {
+            transform: scale(1.1) rotate(5deg);
+        }
+
+        .value-card h3 {
+            font-family: var(--font-poppins);
+            font-size: 1.4rem;
+            font-weight: 700;
+            color: var(--text-dark);
+            margin-bottom: var(--spacing-md);
+        }
+
+        .value-card p {
+            color: var(--text-medium);
+            line-height: 1.6;
+        }
+
+        /* ============== FOOTER STYLES ============== */
+        footer {
+            background: var(--bg-dark);
+            color: var(--text-white);
+            padding: var(--spacing-3xl) var(--spacing-xl) var(--spacing-lg);
+            position: relative;
+        }
+
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: var(--spacing-2xl);
+            margin-bottom: var(--spacing-xl);
+        }
+
+        .footer-brand h3 {
+            font-family: var(--font-poppins);
+            font-size: 1.5rem;
+            font-weight: 800;
+            margin-bottom: var(--spacing-md);
+        }
+
+        .footer-brand p {
+            color: #bbb;
+            margin-bottom: var(--spacing-lg);
+            line-height: 1.6;
+        }
+
+        .social-links {
+            display: flex;
+            gap: var(--spacing-md);
+        }
+
+        .social-links a {
+            width: 40px;
+            height: 40px;
+            background: var(--primary-gradient);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--text-white);
+            transition: var(--transition-bounce);
+        }
+
+        .social-links a:hover {
+            transform: translateY(-2px) scale(1.1);
+            box-shadow: var(--shadow-lg);
+        }
+
+        .footer-section h4 {
+            font-weight: 600;
+            margin-bottom: var(--spacing-md);
+            color: var(--text-white);
+        }
+
+        .footer-section a {
+            color: #bbb;
+            text-decoration: none;
+            transition: var(--transition-fast);
+            display: block;
+            margin-bottom: var(--spacing-sm);
+        }
+
+        .footer-section a:hover {
+            color: var(--text-white);
+            transform: translateX(5px);
+        }
+
+        .footer-bottom {
+            border-top: 1px solid #444;
+            padding-top: var(--spacing-lg);
+            text-align: center;
+            color: #bbb;
+            font-size: 0.9rem;
+        }
+
+        /* ============== ANIMATIONS ============== */
+        @keyframes fadeInUp {
+            from { opacity: 0; transform: translateY(30px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(-10px); }
+        }
+
+        /* ============== RESPONSIVE DESIGN ============== */
+        @media (max-width: 768px) {
+            .menu-toggle {
+                display: flex;
+            }
+
+            .nav-menu {
+                position: fixed;
+                top: 80px;
+                left: -100%;
+                width: 100%;
+                height: calc(100vh - 80px);
+                background: rgba(255, 255, 255, 0.98);
+                backdrop-filter: blur(20px);
+                flex-direction: column;
+                justify-content: flex-start;
+                padding: var(--spacing-xl);
+                transition: var(--transition-normal);
+            }
+
+            .nav-menu.active {
+                left: 0;
+            }
+
+            .nav-links {
+                flex-direction: column;
+                width: 100%;
+                gap: var(--spacing-md);
+            }
+
+            .nav-links a {
+                width: 100%;
+                text-align: center;
+                padding: var(--spacing-md);
+                background: var(--bg-light);
+                border-radius: var(--border-radius-md);
+            }
+
+            .timeline::after {
+                left: 20px;
+            }
+
+            .timeline-item {
+                width: 100%;
+                padding-left: 50px;
+                padding-right: var(--spacing-md);
+            }
+
+            .timeline-item::after {
+                left: 10px;
+            }
+
+            .timeline-item.left .timeline-content::after,
+            .timeline-item.right .timeline-content::after {
+                display: none;
+            }
+
+            .timeline-item.right {
+                left: 0%;
+            }
+
+            .page-hero h1 {
+                font-size: 2.5rem;
+            }
+
+            .team-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .values-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .section {
+                padding: var(--spacing-xl) var(--spacing-md);
+            }
+
+            .page-hero h1 {
+                font-size: 2rem;
+            }
+
+            .section-header h2 {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="header-content">
+            <a href="index.html" class="logo" aria-label="InnovateTech Solutions Homepage">
+                InnovateTech Solutions
+            </a>
+            
+            <nav class="nav-menu" id="navMenu" role="navigation" aria-label="Main Navigation">
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html" class="active" aria-current="page">About</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <a href="contact.html" class="btn btn-primary" aria-label="Get started with our services">Get Started</a>
+            </nav>
+            
+            <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="navMenu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <!-- Page Hero -->
+        <section class="page-hero">
+            <div class="page-hero-content">
+                <h1>About InnovateTech Solutions</h1>
+                <p>Pioneering technology innovation for over a decade, empowering businesses to thrive in the digital age through cutting-edge solutions and exceptional service.</p>
+            </div>
+        </section>
+
+        <!-- Company History Timeline -->
+        <section class="section timeline-section" id="history">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Our Journey Through Innovation</h2>
+                    <p>From a small startup to a global technology leader, discover the milestones that shaped our company and defined our commitment to excellence.</p>
+                </div>
+                
+                <div class="timeline">
+                    <div class="timeline-item left">
+                        <div class="timeline-content">
+                            <div class="timeline-year">2010</div>
+                            <h3>The Beginning</h3>
+                            <p>InnovateTech Solutions was founded by a team of passionate developers with a shared vision: to make cutting-edge technology accessible to businesses of all sizes. We started in a small garage with big dreams and an unwavering commitment to innovation.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="timeline-item right">
+                        <div class="timeline-content">
+                            <div class="timeline-year">2012</div>
+                            <h3>First Major Partnership</h3>
+                            <p>We secured our first enterprise client, a Fortune 500 company, marking our transition from startup to established technology partner. This milestone validated our approach and set the foundation for sustainable growth.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="timeline-item left">
+                        <div class="timeline-content">
+                            <div class="timeline-year">2015</div>
+                            <h3>Global Expansion</h3>
+                            <p>International expansion began as we opened offices in Europe and Asia. We also launched our mobile solutions division, recognizing the growing importance of mobile-first experiences in the digital landscape.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="timeline-item right">
+                        <div class="timeline-content">
+                            <div class="timeline-year">2018</div>
+                            <h3>Cloud & AI Revolution</h3>
+                            <p>We embraced cloud-native technologies and artificial intelligence, helping clients transform their infrastructure and leverage data-driven insights. Our cloud solutions team grew to 50+ certified professionals.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="timeline-item left">
+                        <div class="timeline-content">
+                            <div class="timeline-year">2020</div>
+                            <h3>Remote Collaboration Era</h3>
+                            <p>The global pandemic accelerated digital transformation initiatives. We pivoted quickly to support remote work solutions, helping over 200 companies maintain business continuity through innovative digital platforms.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="timeline-item right">
+                        <div class="timeline-content">
+                            <div class="timeline-year">2022</div>
+                            <h3>Sustainability Focus</h3>
+                            <p>We launched our Green Tech initiative, committing to carbon-neutral operations and helping clients reduce their environmental footprint through efficient, sustainable technology solutions.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="timeline-item left">
+                        <div class="timeline-content">
+                            <div class="timeline-year">2024</div>
+                            <h3>AI-Powered Future</h3>
+                            <p>Today, we're at the forefront of AI integration, developing intelligent solutions that automate processes, enhance decision-making, and create unprecedented opportunities for our clients' growth and innovation.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Team Section -->
+        <section class="section" id="team">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Meet Our Expert Team</h2>
+                    <p>Our diverse team of technology experts, strategists, and innovators work collaboratively to deliver exceptional solutions for our clients worldwide.</p>
+                </div>
+                
+                <div class="team-grid">
+                    <article class="team-member">
+                        <div class="team-photo">
+                            👩‍💼
+                        </div>
+                        <div class="team-info">
+                            <h3 class="team-name">Sarah Chen</h3>
+                            <p class="team-position">CEO & Co-Founder</p>
+                            <p class="team-bio">Visionary leader with 15+ years in technology innovation. Sarah drives our strategic direction and ensures we stay ahead of emerging trends while maintaining our commitment to client success.</p>
+                            <div class="team-social">
+                                <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                                <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                                <a href="#" aria-label="Email"><i class="fas fa-envelope"></i></a>
+                            </div>
+                        </div>
+                    </article>
+                    
+                    <article class="team-member">
+                        <div class="team-photo">
+                            👨‍💻
+                        </div>
+                        <div class="team-info">
+                            <h3 class="team-name">Marcus Rodriguez</h3>
+                            <p class="team-position">CTO & Co-Founder</p>
+                            <p class="team-bio">Technical architect and innovation catalyst. Marcus leads our engineering teams and oversees the development of cutting-edge solutions that push the boundaries of what's possible.</p>
+                            <div class="team-social">
+                                <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                                <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                                <a href="#" aria-label="Email"><i class="fas fa-envelope"></i></a>
+                            </div>
+                        </div>
+                    </article>
+                    
+                    <article class="team-member">
+                        <div class="team-photo">
+                            👩‍🎨
+                        </div>
+                        <div class="team-info">
+                            <h3 class="team-name">Emily Watson</h3>
+                            <p class="team-position">Head of Design</p>
+                            <p class="team-bio">Award-winning UX/UI designer passionate about creating intuitive, accessible experiences. Emily ensures every solution we deliver combines functionality with exceptional user experience.</p>
+                            <div class="team-social">
+                                <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                                <a href="#" aria-label="Dribbble"><i class="fab fa-dribbble"></i></a>
+                                <a href="#" aria-label="Email"><i class="fas fa-envelope"></i></a>
+                            </div>
+                        </div>
+                    </article>
+                    
+                    <article class="team-member">
+                        <div class="team-photo">
+                            👨‍☁️
+                        </div>
+                        <div class="team-info">
+                            <h3 class="team-name">David Kim</h3>
+                            <p class="team-position">Director of Cloud Solutions</p>
+                            <p class="team-bio">Cloud infrastructure expert with extensive experience in scalable architectures. David helps organizations transform their technology landscape through strategic cloud adoption.</p>
+                            <div class="team-social">
+                                <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                                <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                                <a href="#" aria-label="Email"><i class="fas fa-envelope"></i></a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Company Values Section -->
+        <section class="section timeline-section" id="values">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Our Core Values</h2>
+                    <p>These fundamental principles guide every decision we make and every solution we create, ensuring we consistently deliver value that makes a meaningful difference.</p>
+                </div>
+                
+                <div class="values-grid">
+                    <div class="value-card">
+                        <div class="value-icon">
+                            <i class="fas fa-lightbulb" aria-hidden="true"></i>
+                        </div>
+                        <h3>Innovation First</h3>
+                        <p>We constantly push boundaries and explore new technologies to create solutions that don't just meet today's needs but anticipate tomorrow's challenges. Innovation is at the heart of everything we do.</p>
+                    </div>
+                    
+                    <div class="value-card">
+                        <div class="value-icon">
+                            <i class="fas fa-handshake" aria-hidden="true"></i>
+                        </div>
+                        <h3>Client Partnership</h3>
+                        <p>We believe in building lasting relationships based on trust, transparency, and mutual success. Your goals become our goals, and your success is our primary measure of achievement.</p>
+                    </div>
+                    
+                    <div class="value-card">
+                        <div class="value-icon">
+                            <i class="fas fa-gem" aria-hidden="true"></i>
+                        </div>
+                        <h3>Excellence & Quality</h3>
+                        <p>We maintain the highest standards in every aspect of our work. From code quality to customer service, we're committed to delivering excellence that exceeds expectations consistently.</p>
+                    </div>
+                    
+                    <div class="value-card">
+                        <div class="value-icon">
+                            <i class="fas fa-users" aria-hidden="true"></i>
+                        </div>
+                        <h3>Collaborative Culture</h3>
+                        <p>We foster an inclusive environment where diverse perspectives drive innovation. Our team's collective expertise and collaborative spirit enable us to solve complex challenges effectively.</p>
+                    </div>
+                    
+                    <div class="value-card">
+                        <div class="value-icon">
+                            <i class="fas fa-leaf" aria-hidden="true"></i>
+                        </div>
+                        <h3>Sustainability Focus</h3>
+                        <p>We're committed to responsible technology practices that benefit both business and environment. Our solutions prioritize efficiency, sustainability, and positive long-term impact.</p>
+                    </div>
+                    
+                    <div class="value-card">
+                        <div class="value-icon">
+                            <i class="fas fa-shield-alt" aria-hidden="true"></i>
+                        </div>
+                        <h3>Security & Trust</h3>
+                        <p>We prioritize security and data protection in every solution we develop. Trust is earned through consistent demonstration of reliability, integrity, and robust security practices.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer role="contentinfo">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <h3>🚀 InnovateTech Solutions</h3>
+                    <p>Transforming businesses through innovative technology solutions. We're your trusted partner for digital transformation and growth.</p>
+                    <div class="social-links" role="list" aria-label="Social Media Links">
+                        <a href="https://linkedin.com/company/innovatetech-solutions" aria-label="Follow us on LinkedIn" role="listitem">
+                            <i class="fab fa-linkedin-in" aria-hidden="true"></i>
+                        </a>
+                        <a href="https://twitter.com/innovatetech" aria-label="Follow us on Twitter" role="listitem">
+                            <i class="fab fa-twitter" aria-hidden="true"></i>
+                        </a>
+                        <a href="https://github.com/innovatetech-solutions" aria-label="View our GitHub profile" role="listitem">
+                            <i class="fab fa-github" aria-hidden="true"></i>
+                        </a>
+                        <a href="https://facebook.com/innovatetech.solutions" aria-label="Follow us on Facebook" role="listitem">
+                            <i class="fab fa-facebook-f" aria-hidden="true"></i>
+                        </a>
+                        <a href="https://instagram.com/innovatetech_solutions" aria-label="Follow us on Instagram" role="listitem">
+                            <i class="fab fa-instagram" aria-hidden="true"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Services</h4>
+                    <a href="services.html">Web Development</a>
+                    <a href="services.html">Mobile Apps</a>
+                    <a href="services.html">Cloud Solutions</a>
+                    <a href="services.html">Digital Strategy</a>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Company</h4>
+                    <a href="about.html">About Us</a>
+                    <a href="contact.html">Contact</a>
+                    <a href="mailto:careers@innovatetech-solutions.com">Careers</a>
+                    <a href="mailto:support@innovatetech-solutions.com">Support</a>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Contact Information</h4>
+                    <p><i class="fas fa-map-marker-alt" aria-hidden="true"></i> 123 Innovation Drive<br>
+                    Tech Valley, CA 94000<br>
+                    United States</p>
+                    
+                    <p><i class="fas fa-phone" aria-hidden="true"></i> 
+                    <a href="tel:+15551234567">+1 (555) 123-4567</a></p>
+                    
+                    <p><i class="fas fa-envelope" aria-hidden="true"></i> 
+                    <a href="mailto:info@innovatetech-solutions.com">info@innovatetech-solutions.com</a></p>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 InnovateTech Solutions. All rights reserved. | 
+                <a href="mailto:privacy@innovatetech-solutions.com">Privacy Policy</a> | 
+                <a href="mailto:legal@innovatetech-solutions.com">Terms of Service</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // JavaScript functionality (same as index.html)
+        class AboutPageHandler {
+            constructor() {
+                this.init();
+                this.setupEventListeners();
+                this.initAnimations();
+            }
+
+            init() {
+                this.header = document.querySelector('header');
+                this.menuToggle = document.getElementById('menuToggle');
+                this.navMenu = document.getElementById('navMenu');
+                this.lastScrollTop = 0;
+                this.isScrolling = false;
+            }
+
+            setupEventListeners() {
+                // Mobile menu toggle
+                this.menuToggle?.addEventListener('click', () => this.toggleMobileMenu());
+                
+                // Smooth scrolling for anchor links
+                document.querySelectorAll('a[href^="#"]').forEach(link => {
+                    link.addEventListener('click', (e) => this.handleSmoothScroll(e));
+                });
+
+                // Header scroll effects
+                window.addEventListener('scroll', () => this.handleScroll(), { passive: true });
+                
+                // Close mobile menu on outside click
+                document.addEventListener('click', (e) => this.handleOutsideClick(e));
+                
+                // Keyboard navigation
+                document.addEventListener('keydown', (e) => this.handleKeyDown(e));
+                
+                // Intersection observer for animations
+                this.observeElements();
+
+                // Add loading animation
+                window.addEventListener('load', () => {
+                    document.body.classList.add('loaded');
+                });
+            }
+
+            toggleMobileMenu() {
+                const isOpen = this.navMenu.classList.contains('active');
+                
+                if (isOpen) {
+                    this.navMenu.classList.remove('active');
+                    this.menuToggle.classList.remove('active');
+                    this.menuToggle.setAttribute('aria-expanded', 'false');
+                    document.body.style.overflow = '';
+                } else {
+                    this.navMenu.classList.add('active');
+                    this.menuToggle.classList.add('active');
+                    this.menuToggle.setAttribute('aria-expanded', 'true');
+                    document.body.style.overflow = 'hidden';
+                }
+            }
+
+            handleSmoothScroll(e) {
+                e.preventDefault();
+                const targetId = e.currentTarget.getAttribute('href').substring(1);
+                const targetElement = document.getElementById(targetId);
+                
+                if (targetElement) {
+                    const headerHeight = this.header.offsetHeight;
+                    const targetPosition = targetElement.offsetTop - headerHeight - 20;
+                    
+                    window.scrollTo({
+                        top: targetPosition,
+                        behavior: 'smooth'
+                    });
+
+                    // Close mobile menu if open
+                    if (this.navMenu.classList.contains('active')) {
+                        this.toggleMobileMenu();
+                    }
+                }
+            }
+
+            handleScroll() {
+                if (!this.isScrolling) {
+                    window.requestAnimationFrame(() => {
+                        const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+                        
+                        // Header hide/show effect
+                        if (scrollTop > this.lastScrollTop && scrollTop > 100) {
+                            this.header.style.transform = 'translateY(-100%)';
+                        } else {
+                            this.header.style.transform = 'translateY(0)';
+                        }
+                        
+                        // Header shadow effect
+                        if (scrollTop > 10) {
+                            this.header.style.boxShadow = '0 4px 20px rgba(0, 0, 0, 0.1)';
+                            this.header.style.background = 'rgba(255, 255, 255, 0.98)';
+                        } else {
+                            this.header.style.boxShadow = 'none';
+                            this.header.style.background = 'rgba(255, 255, 255, 0.95)';
+                        }
+                        
+                        this.lastScrollTop = scrollTop;
+                        this.isScrolling = false;
+                    });
+                }
+                this.isScrolling = true;
+            }
+
+            handleOutsideClick(e) {
+                if (!this.navMenu?.contains(e.target) && !this.menuToggle?.contains(e.target)) {
+                    if (this.navMenu?.classList.contains('active')) {
+                        this.toggleMobileMenu();
+                    }
+                }
+            }
+
+            handleKeyDown(e) {
+                if (e.key === 'Escape' && this.navMenu?.classList.contains('active')) {
+                    this.toggleMobileMenu();
+                    this.menuToggle?.focus();
+                }
+            }
+
+            observeElements() {
+                const observerOptions = {
+                    threshold: 0.1,
+                    rootMargin: '0px 0px -50px 0px'
+                };
+
+                const observer = new IntersectionObserver((entries) => {
+                    entries.forEach(entry => {
+                        if (entry.isIntersecting) {
+                            entry.target.classList.add('animate-in');
+                        }
+                    });
+                }, observerOptions);
+
+                // Observe all animatable elements
+                document.querySelectorAll('.timeline-content, .team-member, .value-card').forEach(el => {
+                    observer.observe(el);
+                });
+            }
+
+            initAnimations() {
+                // Add CSS for animations
+                const style = document.createElement('style');
+                style.textContent = `
+                    .timeline-content, .team-member, .value-card {
+                        opacity: 0;
+                        transform: translateY(30px);
+                        transition: all 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+                    }
+                    
+                    .animate-in {
+                        opacity: 1 !important;
+                        transform: translateY(0) !important;
+                    }
+                    
+                    .menu-toggle.active span:nth-child(1) {
+                        transform: rotate(45deg) translate(5px, 5px);
+                    }
+                    
+                    .menu-toggle.active span:nth-child(2) {
+                        opacity: 0;
+                    }
+                    
+                    .menu-toggle.active span:nth-child(3) {
+                        transform: rotate(-45deg) translate(7px, -6px);
+                    }
+                `;
+                document.head.appendChild(style);
+            }
+        }
+
+        // Initialize when DOM is loaded
+        document.addEventListener('DOMContentLoaded', () => {
+            new AboutPageHandler();
+        });
+    </script>
+</body>
+</html>
